@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC T-SHIRTS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&family=Sofia+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EBAC T-SHIRTS</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sobre-a-loja" id="botao-sobre-a-loja">SOBRE A LOJA</a>
+                    </li>
+                    <li>
+                        <a href="#produtos" id="botao-produtos">PRODUTOS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="sobre-a-loja">
+        <div class="conteudo container">
+            <div>
+                <img class="store-front" src="./images/loja.jpg" alt="Parede da loja Guitar Store" />
+            </div>
+            <div>
+                <h2 id="sobre-a-loja">SOBRE A LOJA</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum asperiores tempore, harum id dolore deserunt facere consectetur, nostrum enim nobis fugiat quo ipsam nesciunt eius placeat incidunt itaque beatae minima!
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore commodi maxime consequuntur neque voluptate aperiam rerum officiis, incidunt ipsum ullam at iste nihil beatae ut quae architecto, possimus sunt. Inventore.
+                </p>
+                <ul class="brands-list">
+                    <li><img src="./images/nike.png" alt="Fender"></li>
+                    <li><img src="./images/adidas.png" alt="Gibson"></li>
+                    <li><img src="./images/ck.png" alt="Giannini"></li>
+                    <li><img src="./images/tommy.png" alt="Tagima"></li>
+                </ul>    
+            </div>
+        </div>
+    </section>
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <h2>PRODUTOS</h2>
+            <div class="produtos-venda">
+                <div class="produto-individual">
+                        <img src="./images/blusa-nike.jpg" />
+                        <h3>Blusa Nike</h3>
+                        <p>
+                            Blusa Nike preta
+                        </p>
+                        <button type="button">Adicionar ao carrinho</button>
+                </div>
+                <div class="produto-individual">
+                        <img src="./images/blusa-adidas.jpg" />
+                        <h3>Blusa Adidas</h3>
+                        <p>
+                            Blusa Adidas azul
+                        </p>
+                        <button type="button">Adicionar ao carrinho</button>
+                </div>
+                <div class="produto-individual">
+                        <img src="./images/blusa-ck.jpg" />
+                        <h3>Blusa CK</h3>
+                        <p>
+                            Blusa Calbin Klein branca
+                        </p>
+                        <button type="button">Adicionar ao carrinho</button>
+                </div>
+                <div class="produto-individual">
+                        <img src="./images/blusa-tommy.jpg" />
+                        <h3>Bçusa Tommy</h3>
+                        <p>
+                            Blusa Tommy preta
+                        </p>
+                        <button type="button">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; EBAC T-SHIRTS - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+         $(document).ready(function(){
+
+            $('#botao-sobre-a-loja').click(function() {
+                const destino = $('#sobre-a-loja');
+
+                $('html').animate({
+                scrollTop: destino.offset().top
+                }, 800)
+            })
+
+            $('#botao-produtos').click(function() {
+                const destino2 = $('#produtos');
+
+                $('html').animate({
+                scrollTop: destino2.offset().top
+                }, 1000)
+            })
+
+        })
+    </script>
+</body>
+</html>
